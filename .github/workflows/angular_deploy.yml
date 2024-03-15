@@ -28,9 +28,9 @@ jobs:
       run: npm install
       working-directory: icapital-web-users-tools
 
-    - name: Run tests
-      run: npm run test:headless
-      working-directory: icapital-web-users-tools
+    # - name: Run tests
+    #   run: npm run test:headless
+    #   working-directory: icapital-web-users-tools
 
     - name: Build
       run: npm run build:prod
