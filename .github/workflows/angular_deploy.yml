@@ -2,7 +2,7 @@ name: 'Deploy Angular App'
 
 on:
   pull_request:
-    branches: [ "develop" ]
+    branches: [ "development" ]
     types: ["closed"]
 
 jobs:
