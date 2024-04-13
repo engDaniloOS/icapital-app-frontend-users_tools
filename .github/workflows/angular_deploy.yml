@@ -1,12 +1,13 @@
 name: 'Deploy Angular App'
 
 on:
-    push:
-      branches: [ "develop" ]
-    pull_request:
+  pull_request:
+    branches: [ "develop" ]
+    types: ["closed"]
 
 jobs:
   deploy:
+    if: ${{ github.event.pull_request.merged == true }}
     runs-on: ubuntu-latest
     steps:
     - name: Configure AWS Credentials
